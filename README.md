@@ -18,7 +18,7 @@
 # Install & Upgrade
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/seniornet1/5x-ui/master/install.sh)
 ```
 
 # Install custom version
@@ -26,7 +26,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 To install your desired version you can add the version to the end of install command. Example for ver `v1.7.6`:
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) v1.7.6
+bash <(curl -Ls https://raw.githubusercontent.com/seniornet1/5x-ui/master/install.sh) v1.7.6
 ```
 
 # SSL
@@ -66,7 +66,7 @@ You also can use `x-ui` menu then select `SSL Certificate Management`
 ```sh
 ARCH=$(uname -m)
 [[ "${ARCH}" == "aarch64" || "${ARCH}" == "arm64" ]] && XUI_ARCH="arm64" || XUI_ARCH="amd64"
-wget https://github.com/MHSanaei/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
+wget https://github.com/seniornet1/5x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
 ```
 
 2. Once the compressed package is downloaded, execute the following commands to install or upgrade x-ui:
@@ -102,7 +102,7 @@ systemctl restart x-ui
 2. Clone the Project Repository:
 
    ```sh
-   git clone https://github.com/MHSanaei/3x-ui.git
+   git clone https://github.com/seniornet1/5x-ui.git
    cd 3x-ui
    ```
 
@@ -122,7 +122,7 @@ systemctl restart x-ui
       --network=host \
       --restart=unless-stopped \
       --name 3x-ui \
-      ghcr.io/mhsanaei/3x-ui:latest
+      ghcr.io/seniornet1/5x-ui:latest
    ```
 
 </details>
@@ -339,4 +339,4 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/MHSanaei/3x-ui.svg)](https://starchart.cc/MHSanaei/3x-ui)
+[![Stargazers over time](https://starchart.cc/seniornet1/5x-ui.svg)](https://starchart.cc/seniornet1/5x-ui)
